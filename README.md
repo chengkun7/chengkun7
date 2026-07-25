@@ -1,22 +1,44 @@
 # 👋 你好，我是蔡承坤
 
-> 大模型 AI Infrastructure 方向学习者 | 深度学习框架研发实习生
-> 北京理工大学 硕士在读 | 寒武纪 Cambricon 框架研发部实习
+> 北京理工大学硕士研究生  
+> 寒武纪深度学习框架研发实习生  
+> 方向：AI Infrastructure / 深度学习框架 / AI 编译器 / 大模型训练系统
+
+目前主要参与 **PyTorch/MLU 深度学习框架、TorchInductor 编译链、高性能计算后端及研发效能基础设施**相关工作。
+
+我的长期方向是 **AI Infrastructure**，希望持续深入模型、框架、编译器、运行时与硬件之间的完整技术链路。
 
 ## 🎯 核心方向
-专注**大模型全栈 AI 基础设施**优化，覆盖从单卡算子编译、多卡分布式训练到端到端推理服务的完整技术链路：
-- 深度学习编译器与高性能计算：TorchInductor 编译链、CNTLASS 高性能算子接入、动态 Shape 编译优化
-- 大模型分布式训练：Megatron-LM / FSDP 训练框架、通信计算 Overlap、显存优化与通信库适配
-- LLM 推理引擎：vLLM 推理服务显存治理、Attention 优化、低精度推理加速
-- 跨硬件 AI 框架适配：MLU 硬件架构下的 PyTorch 生态建设
 
-## 💻 当前正在推进
+- **深度学习编译器与高性能计算**
+  - PyTorch、TorchInductor、FX、AOTAutograd
+  - 编译后端、代码生成、Autotune、AOT 部署
+  - GEMM、GroupGemm、低精度矩阵计算
+
+- **大模型训练系统**
+  - Megatron-LM、FSDP/HSDP
+  - 分布式通信、显存分析、通信计算重叠
+  - 多卡训练性能与稳定性优化
+
+- **大模型推理系统**
+  - vLLM、推理显存管理
+  - Prefill/Decode 性能分析
+  - Attention 与低精度推理优化
+
+- **torch_mlu 框架**
+  - 基于 AI Agent 的代码评审与研发流程自动化
+  - C++ API/ABI 兼容性分析与版本发布质量门禁
+  - PyTorch 主线演进下的框架补丁漂移检测
+  - CI 自动化工程优化与框架长期可维护性建设
+
+## 💻 项目经历
+
 ### 1. TorchInductor 高性能计算后端与编译链优化
-面向大模型训练与推理场景，在 MLU 平台建设 TorchInductor CNTLASS 高性能计算后端：
-- 打通 CNTLASS 代码生成、AOT 编译运行、autotune 性能选型全链路，完成 PyTorch 主线版本兼容性交付
+面向大模型训练与推理场景，参与 TorchInductor 高性能计算后端建设：
+- 打通 CNTLASS 代码生成、AOT 编译运行、autotune 性能选型全链路，完成 PyTorch 兼容性交付
+- 建设基于 MLU Event 的 `MLUInductorBenchmarker`，支持候选 Kernel 的设备侧性能测量 
 - 接入 GEMM / GroupGemm / scaled_mm 等核心矩阵计算算子，覆盖 fp32/fp16/bf16/fp8 多精度
 - 实现动态 Shape 编译复用、分桶调度与算子融合优化，降低重复编译开销与性能波动
-- 通过真实大模型 Workload 验证端到端性能收益，建设标准化 Benchmark 与性能回归体系
 
 ### 2. 大模型分布式训练吞吐、通信与显存优化
 针对 Qwen / Llama 等大模型多机多卡训练场景，开展全链路性能与显存优化：
@@ -32,20 +54,39 @@
 - 打通 scaled_mm / SDPA 等低精度计算路径，适配 GQA / FlashAttention 等推理优化技术
 - 定位并修复推理服务随机崩溃、异步拷贝异常等稳定性问题，保障线上服务可用性
 
-## 🚀 开源参与
+### 4. AI Agent 与 torch_mlu 研发效能平台建设
+面向 PyTorch/torch_mlu 框架研发与版本演进，参与建设研发自动化平台：
+- 设计并落地 GitLab MR 触发的 Codex Review 服务，支持多任务并发调度、评审规则解耦、结果自动回写与重复任务去重
+- 建设 torch_mlu C++ API/ABI 自动兼容性检查流程，支持公共接口变更识别、差异报告生成与版本发布质量门禁
+- 建设框架版本演进下的 Gorilla monkey patch 与 inherited override 补丁适配检测，输出结构化问题原因、代码差异和修复建议
+
+## 🌱  开源参与
 - **[Relax](https://github.com/redai-infra/Relax)**：小红书大模型 Infra 团队开源的多模态大模型 RL 后训练框架，参与框架性能优化与生态共建
 - 持续关注 PyTorch、vLLM、Megatron-LM 等开源社区前沿技术，参与 AI 框架与大模型基础设施相关的开源贡献
 
-## 🛠️ 技术栈
-| 领域 | 技术栈 |
-|------|--------|
-| 编程语言 | C/C++、Python、高性能算子开发 |
-| AI 框架 | PyTorch、TorchInductor、Megatron-LM、vLLM |
-| 高性能计算 | CNTLASS、GEMM/GroupGemm、算子融合、低精度计算 |
-| 分布式系统 | FSDP、TP/PP/EP、CNCL/NCCL、通信计算 Overlap |
-| 工具链 | Profiler、Git、CMake、Docker、Ray |
-| 硬件平台 | MLU、GPU、端侧嵌入式芯片 |
+## 🛠️ 技术方向与知识栈
+
+### 编程语言
+`C语言` `C++` `Python` `Shell` `linux`
+
+### 深度学习框架
+`PyTorch` `torch_mlu` `Autograd` `Dispatcher` `ATen` `Custom Operators`
+
+### AI 编译器
+`torch.compile` `TorchDynamo` `FX` `AOTAutograd` `TorchInductor` `Graph Optimization` `Lowering` `Codegen`
+
+### 高性能计算
+`GEMM` `GroupGemm` `Attention` `算子融合` `低精度计算` `Kernel Autotune` `性能分析`
+
+### 分布式训练与训练框架
+`Megatron-LM` `FSDP/HSDP` `TP/PP/DP/EP` `Collective Communication` `通信计算重叠` `训练显存优化`
+
+### 推理框架与推理优化
+`vLLM` `Continuous Batching` `KV Cache` `Prefill/Decode` `Attention Optimization` `量化与低精度推理`
+
+### AI 加速芯片与异构计算
+`Cambricon MLU` `MLU Architecture` `CNToolkit` `CNCL` `设备内存管理` `异构后端适配` `多卡互联`
 
 ## 📫 联系我
 - 邮箱：3220240409@bit.edu.cn
-- 期待与同行交流 AI Infra、深度学习框架、高性能计算相关技术与工作机会
+- 期待与同行交流 PyTorch、TorchInductor、AI 编译器、大模型训练与推理系统相关技术!
