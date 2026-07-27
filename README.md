@@ -2,6 +2,7 @@
 
 ## 📝 个人简介
 🎓 **学历背景**：北京理工大学 | 车辆工程硕士研究生
+
 💼 **实习经历**：寒武纪科技 | 深度学习框架研发实习生
 
 ### 🔍 研究方向：
@@ -13,30 +14,32 @@ AI Infrastructure · 深度学习框架 · AI编译器 · 大模型训练推理�
 ### ✨ 技术追求
 深耕模型、框架、编译器、运行时与硬件一体化全链路研发；以AI基础设施赋能上层应用，让机器更好地理解和服务人类！
 
+---
 
 ## 🎯 核心方向
 
-- **深度学习编译器与高性能计算**
+ **深度学习编译器与高性能计算**
   - PyTorch、TorchInductor、FX、AOTAutograd
   - 编译后端、代码生成、Autotune、AOT 部署
   - GEMM、GroupGemm、低精度矩阵计算
 
-- **大模型分布式训练吞吐、通信与显存优化**
+ **大模型分布式训练吞吐、通信与显存优化**
   - Megatron-LM、FSDP/HSDP
   - 分布式通信、显存分析、通信计算重叠
   - 多卡训练性能与稳定性优化
 
-- **LLM 推理引擎与服务性能优化**
+ **LLM 推理引擎与服务性能优化**
   - vLLM、推理显存管理
   - Prefill/Decode 性能分析
   - Attention 与低精度推理优化
 
-- **国产适配与研发效能建设**
+ **国产适配与研发效能建设**
   - 基于 AI Agent 的代码评审与研发流程自动化
   - C++ API/ABI 兼容性分析与版本发布质量门禁
   - PyTorch 主线演进下的框架补丁漂移检测
   - CI 自动化工程优化与框架长期可维护性建设
 
+---
 
 ## 💻 项目经历
 
@@ -67,11 +70,13 @@ AI Infrastructure · 深度学习框架 · AI编译器 · 大模型训练推理�
 - 建设 torch_mlu C++ API/ABI 自动兼容性检查流程，支持公共接口变更识别、差异报告生成与版本发布质量门禁
 - 建设框架版本演进下的 Gorilla monkey patch 与 inherited override 补丁适配检测，输出结构化问题原因、代码差异和修复建议
 
+---
 
 ## 🌱  开源参与
 - **[Relax](https://github.com/redai-infra/Relax)**：小红书大模型 Infra 团队开源的多模态大模型 RL 后训练框架，参与框架性能优化与生态共建
 - 持续关注 PyTorch、vLLM、Megatron-LM 等开源社区前沿技术，参与 AI 框架与大模型基础设施相关的开源贡献
 
+---
 
 ### 🛠️ 技术方向与知识栈
 - **编程语言**：C、C++、Python、Shell、Linux
@@ -82,6 +87,7 @@ AI Infrastructure · 深度学习框架 · AI编译器 · 大模型训练推理�
 - **LLM推理优化**：vLLM、Continuous Batching、KV Cache、Prefill/Decode、Attention Optimization、量化与低精度推理
 - **异构芯片计算**：Cambricon MLU、MLU Architecture、CNToolkit、CNCL、设备内存管理、异构后端适配、多卡互联
 
+---
 
 ## 📫 联系我
 - 邮箱：3220240409@bit.edu.cn
