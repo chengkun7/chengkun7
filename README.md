@@ -64,28 +64,15 @@
 - **[Relax](https://github.com/redai-infra/Relax)**：小红书大模型 Infra 团队开源的多模态大模型 RL 后训练框架，参与框架性能优化与生态共建
 - 持续关注 PyTorch、vLLM、Megatron-LM 等开源社区前沿技术，参与 AI 框架与大模型基础设施相关的开源贡献
 
-## 🛠️ 技术方向与知识栈
+### 🛠️ 技术方向与知识栈
+- **编程语言**：C、C++、Python、Shell、Linux
+- **深度学习框架**：PyTorch、torch_mlu、Autograd、Dispatcher、ATen、Custom Operators
+- **AI 编译器**：torch.compile、TorchDynamo、FX、AOTAutograd、TorchInductor、Graph Optimization、Lowering、Codegen
+- **高性能计算**：GEMM、GroupGemm、Attention、算子融合、低精度计算、Kernel Autotune、性能分析
+- **分布式训练系统**：Megatron-LM、FSDP/HSDP、TP/PP/DP/EP、Collective Communication、通信计算重叠、训练显存优化
+- **LLM推理优化**：vLLM、Continuous Batching、KV Cache、Prefill/Decode、Attention Optimization、量化与低精度推理
+- **异构芯片计算**：Cambricon MLU、MLU Architecture、CNToolkit、CNCL、设备内存管理、异构后端适配、多卡互联
 
-### 编程语言
-`C语言` `C++` `Python` `Shell` `linux`
-
-### 深度学习框架
-`PyTorch` `torch_mlu` `Autograd` `Dispatcher` `ATen` `Custom Operators`
-
-### AI 编译器
-`torch.compile` `TorchDynamo` `FX` `AOTAutograd` `TorchInductor` `Graph Optimization` `Lowering` `Codegen`
-
-### 高性能计算
-`GEMM` `GroupGemm` `Attention` `算子融合` `低精度计算` `Kernel Autotune` `性能分析`
-
-### 分布式训练与训练框架
-`Megatron-LM` `FSDP/HSDP` `TP/PP/DP/EP` `Collective Communication` `通信计算重叠` `训练显存优化`
-
-### 推理框架与推理优化
-`vLLM` `Continuous Batching` `KV Cache` `Prefill/Decode` `Attention Optimization` `量化与低精度推理`
-
-### AI 加速芯片与异构计算
-`Cambricon MLU` `MLU Architecture` `CNToolkit` `CNCL` `设备内存管理` `异构后端适配` `多卡互联`
 
 ## 📫 联系我
 - 邮箱：3220240409@bit.edu.cn
