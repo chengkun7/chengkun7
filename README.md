@@ -9,10 +9,10 @@
 
 ## 👨‍💻 About Me
 
-- 🎓 **M.S. Candidate in Vehicle Engineering** at **Beijing Institute of Technology**
+- 🎓 **M.S. in Vehicle Engineering** at **Beijing Institute of Technology**
 - 💼 **Deep Learning Framework Engineering Intern** at **Cambricon**
-- 🔭 Working on **AI infrastructure**, with a focus on **PyTorch/MLU**, **AI compilers**, **high-performance computing**, and **large-model training and inference optimization**
-- ✨ Exploring full-stack co-design across **models, frameworks, compilers, runtimes, and heterogeneous hardware** to build efficient and reliable AI systems
+- 🔍 Working on **AI infrastructure**, with a focus on **Deep Learning Framework**, **AI compilers**, **high-performance computing**, and **large-model training and inference optimization**
+- ✨ Exploring full-stack co-design across **models, frameworks, compilers, runtimes, and heterogeneous hardware** to build efficient and reliable AI infrastructure that empowers application-layer innovation and helps machines better understand and serve people.
 
 ---
 
