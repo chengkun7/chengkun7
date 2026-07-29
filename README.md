@@ -14,10 +14,6 @@
 - 🔍 Focused on **deep learning frameworks**, **distributed training systems**, **LLM inference optimization**, and **RL post-training infrastructure**
 - ✨ Build AI infrastructure to empower applications and help machines better understand and serve people
 
-<div align="center">
-<i>Better machine, Better AI, Better Life.</i>
-</div>
-
 ---
 
 ## ⚙️ What I Work On
