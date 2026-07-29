@@ -1,94 +1,53 @@
-# 👋 你好，我是蔡承坤
-
-## 📝 个人简介
-🎓 **学历背景**：北京理工大学 | 车辆工程硕士研究生
-
-💼 **实习经历**：寒武纪科技 | 深度学习框架研发实习生
-
-### 🔍 研究方向：
-AI Infrastructure · 深度学习框架 · AI编译器 · 大模型训练推理优化
-
-### ⚙️ 工作内容
-目前深耕 PyTorch/MLU 深度学习框架 ，核心参与： TorchInductor编译链开发、高性能计算后端落地、大模型训练&推理全链路优化、研发效能基础设施搭建。
-
-### ✨ 技术追求
-深耕模型、框架、编译器、运行时与硬件一体化全链路研发；以AI基础设施赋能上层应用，让机器更好地理解和服务人类！
+<div align="center">
+  <img
+    src="https://readme-typing-svg.vercel.app/?lines=Hi,+I'm+Chengkun+Cai;AI+Infrastructure+%7C+Compilers+%7C+ML+Systems&center=true&size=27"
+    alt="Typing SVG"
+  />
+</div>
 
 ---
 
-## 🎯 核心方向
+## 👨‍💻 About Me
 
- **深度学习编译器与高性能计算**
-  - PyTorch、TorchInductor、FX、AOTAutograd
-  - 编译后端、代码生成、Autotune、AOT 部署
-  - GEMM、GroupGemm、低精度矩阵计算
-
- **大模型分布式训练吞吐、通信与显存优化**
-  - Megatron-LM、FSDP/HSDP
-  - 分布式通信、显存分析、通信计算重叠
-  - 多卡训练性能与稳定性优化
-
- **LLM 推理引擎与服务性能优化**
-  - vLLM、推理显存管理
-  - Prefill/Decode 性能分析
-  - Attention 与低精度推理优化
-
- **国产适配与研发效能建设**
-  - 基于 AI Agent 的代码评审与研发流程自动化
-  - C++ API/ABI 兼容性分析与版本发布质量门禁
-  - PyTorch 主线演进下的框架补丁漂移检测
-  - CI 自动化工程优化与框架长期可维护性建设
+- 🎓 **M.S. Candidate in Vehicle Engineering** at **Beijing Institute of Technology**
+- 💼 **Deep Learning Framework Engineering Intern** at **Cambricon**
+- 🔭 Working on **AI infrastructure**, with a focus on **PyTorch/MLU**, **AI compilers**, **high-performance computing**, and **large-model training and inference optimization**
+- ✨ Exploring full-stack co-design across **models, frameworks, compilers, runtimes, and heterogeneous hardware** to build efficient and reliable AI systems
 
 ---
 
-## 💻 项目经历
+## ⚙️ What I Work On
 
-### 1. TorchInductor 高性能计算后端与编译链优化
-面向大模型训练与推理场景，参与 TorchInductor 高性能计算后端建设：
-- 打通 CNTLASS 代码生成、AOT 编译运行、autotune 性能选型全链路，完成 PyTorch 兼容性交付
-- 建设基于 MLU Event 的 `MLUInductorBenchmarker`，支持候选 Kernel 的设备侧性能测量 
-- 接入 GEMM / GroupGemm / scaled_mm 等核心矩阵计算算子，覆盖 fp32/fp16/bf16/fp8 多精度
-- 实现动态 Shape 编译复用、分桶调度与算子融合优化，降低重复编译开销与性能波动
-
-### 2. 大模型分布式训练吞吐、通信与显存优化
-针对 Qwen / Llama 等大模型多机多卡训练场景，开展全链路性能与显存优化：
-- 定位并修复分布式训练中通信算子内存泄漏、显存冗余等底层问题，支撑大模型长周期稳定训练
-- 适配 CNCL 非阻塞通信接口，实现通信计算 Overlap 优化，提升多卡线性加速比
-- 基于 Megatron-LM / TorchTitan 训练框架，开展 FSDP / HSDP 等并行策略的适配与调优
-- 结合 Profiler 工具链分析训练瓶颈，输出 tokens/s、step time、峰值显存等核心指标的优化方案
-
-### 3. LLM 推理引擎显存与服务性能优化
-面向 vLLM / TGI 等推理服务场景，聚焦显存治理与服务性能提升：
-- 优化权重加载阶段的内存分配策略，降低显存碎片与冗余占用，提升单卡模型部署规格
-- 治理 Prefill 阶段显存碎片问题，优化 BlockAllocator 分配与回收机制，提升最大并发 Batch 能力
-- 打通 scaled_mm / SDPA 等低精度计算路径，适配 GQA / FlashAttention 等推理优化技术
-- 定位并修复推理服务随机崩溃、异步拷贝异常等稳定性问题，保障线上服务可用性
-
-### 4. AI Agent 与 torch_mlu 研发效能平台建设
-面向 PyTorch/torch_mlu 框架研发与版本演进，参与建设研发自动化平台：
-- 设计并落地 GitLab MR 触发的 Codex Review 服务，支持多任务并发调度、评审规则解耦、结果自动回写与重复任务去重
-- 建设 torch_mlu C++ API/ABI 自动兼容性检查流程，支持公共接口变更识别、差异报告生成与版本发布质量门禁
-- 建设框架版本演进下的 Gorilla monkey patch 与 inherited override 补丁适配检测，输出结构化问题原因、代码差异和修复建议
+- **AI Compilers & High-Performance Computing** — Contributing to TorchInductor backend development, including CNTLASS code generation, AOT execution, MLU Event-based kernel benchmarking, autotuning, and low-precision GEMM / GroupGemm / `scaled_mm` paths.
+- **Distributed Training Systems** — Optimizing multi-GPU training with Megatron-LM, TorchTitan, FSDP / HSDP, CNCL non-blocking communication, communication–computation overlap, memory diagnostics, and long-running stability.
+- **LLM Inference Systems** — Improving vLLM / TGI memory efficiency and serving performance through weight loading, Prefill / Decode analysis, BlockAllocator optimization, `scaled_mm` / SDPA, GQA / FlashAttention, and service stability.
+- **Developer Infrastructure & Framework Quality** — Building GitLab-triggered Codex Review, C++ API / ABI compatibility gates, Gorilla monkey-patch and inherited-override drift detection, CI automation, and long-term framework maintainability.
 
 ---
 
-## 🌱  开源参与
-- **[Relax](https://github.com/redai-infra/Relax)**：小红书大模型 Infra 团队开源的多模态大模型 RL 后训练框架，参与框架性能优化与生态共建
-- 持续关注 PyTorch、vLLM、Megatron-LM 等开源社区前沿技术，参与 AI 框架与大模型基础设施相关的开源贡献
+## 🌱 Open Source
+
+- Contributing to **[Relax](https://github.com/redai-infra/Relax)**, an open-source multimodal RL post-training framework, with a focus on framework performance and ecosystem development.
 
 ---
 
-### 🛠️ 技术方向与知识栈
-- **编程语言**：C、C++、Python、Shell、Linux
-- **深度学习框架**：PyTorch、torch_mlu、Autograd、Dispatcher、ATen、Custom Operators
-- **AI 编译器**：torch.compile、TorchDynamo、FX、AOTAutograd、TorchInductor、Graph Optimization、Lowering、Codegen
-- **高性能计算**：GEMM、GroupGemm、Attention、算子融合、低精度计算、Kernel Autotune、性能分析
-- **分布式训练系统**：Megatron-LM、FSDP/HSDP、TP/PP/DP/EP、Collective Communication、通信计算重叠、训练显存优化
-- **LLM推理优化**：vLLM、Continuous Batching、KV Cache、Prefill/Decode、Attention Optimization、量化与低精度推理
-- **异构芯片计算**：Cambricon MLU、MLU Architecture、CNToolkit、CNCL、设备内存管理、异构后端适配、多卡互联
+## 🛠️ Tech Stack
+
+<div align="center">
+
+  ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+  ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+  ![Cambricon MLU](https://img.shields.io/badge/Cambricon_MLU-A6192E?style=for-the-badge&logoColor=white)
+
+</div>
 
 ---
 
-## 📫 联系我
-- 邮箱：3220240409@bit.edu.cn
-- 期待与同行交流 PyTorch、TorchInductor、AI 编译器、大模型训练与推理系统相关技术!
+<div align="center">
+  <a href="mailto:3220240409@bit.edu.cn">
+    <img src="https://img.shields.io/badge/EMAIL-CONTACT_ME-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=chengkun7&color=58A6FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
