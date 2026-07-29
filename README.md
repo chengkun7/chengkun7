@@ -11,8 +11,12 @@
 
 - 🎓 **M.S. in Vehicle Engineering** at **Beijing Institute of Technology**
 - 💼 **Deep Learning Framework Engineering Intern** at **Cambricon**
-- 🔍 Working on **AI infrastructure**, with a focus on **Deep Learning Framework**, **AI compilers**, **high-performance computing**, and **large-model training and inference optimization**
-- ✨ Exploring full-stack co-design across **models, frameworks, compilers, runtimes, and heterogeneous hardware** to build efficient and reliable AI infrastructure that empowers application-layer innovation and helps machines better understand and serve people.
+- 🔍 Focused on **deep learning frameworks**, **distributed training systems**, **LLM inference optimization**, and **RL post-training infrastructure**
+- ✨ Build AI infrastructure to empower applications and help machines better understand and serve people
+
+<div align="center">
+<i>Better machine, Better AI, Better Life.</i>
+</div>
 
 ---
 
