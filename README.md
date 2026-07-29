@@ -16,18 +16,26 @@
 
 ---
 
-## ⚙️ What I Work On
+## 🎯 Focus Areas
 
-- **AI Compilers & High-Performance Computing** — Contributing to TorchInductor backend development, including CNTLASS code generation, AOT execution, MLU Event-based kernel benchmarking, autotuning, and low-precision GEMM / GroupGemm / `scaled_mm` paths.
-- **Distributed Training Systems** — Optimizing multi-GPU training with Megatron-LM, TorchTitan, FSDP / HSDP, CNCL non-blocking communication, communication–computation overlap, memory diagnostics, and long-running stability.
-- **LLM Inference Systems** — Improving vLLM / TGI memory efficiency and serving performance through weight loading, Prefill / Decode analysis, BlockAllocator optimization, `scaled_mm` / SDPA, GQA / FlashAttention, and service stability.
-- **Developer Infrastructure & Framework Quality** — Building GitLab-triggered Codex Review, C++ API / ABI compatibility gates, Gorilla monkey-patch and inherited-override drift detection, CI automation, and long-term framework maintainability.
+- **Deep Learning Frameworks & AI Compilers**  
+  PyTorch and TorchInductor compilation, backend development, code generation, autotuning, AOT deployment, operator fusion, and low-precision matrix computation.
+
+- **Distributed Training Performance & Memory Optimization**  
+  Large-scale training with Megatron-LM and FSDP / HSDP, including distributed communication, memory analysis, communication–computation overlap, throughput optimization, and multi-GPU stability.
+
+- **LLM Inference & Serving Optimization**  
+  LLM serving with vLLM and related inference engines, focusing on memory management, Prefill / Decode performance, Attention optimization, low-precision inference, latency, throughput, and service stability.
+
+- **Framework Adaptation & Developer Infrastructure**  
+  Heterogeneous accelerator integration, AI-assisted code review and workflow automation, C++ API / ABI compatibility, framework patch-drift detection, CI engineering, and long-term framework maintainability.
 
 ---
 
-## 🌱 Open Source
+## 🌱 Open Source & Community
 
-- Contributing to **[Relax](https://github.com/redai-infra/Relax)**, an open-source multimodal RL post-training framework, with a focus on framework performance and ecosystem development.
+- **[Relax](https://github.com/redai-infra/Relax)** — Participating in the development of large-scale RL post-training infrastructure.
+- **Moore Threads Academy AI Computing Engineering Co-Creation Program** — Exploring AI computing systems and MUSA-based engineering practices.
 
 ---
 
